@@ -1,0 +1,11 @@
+D:\Application\DNS-Test\DNS-Test\bin\Debug\netcoreapp2.0\DNS-Test.deps.json
+D:\Application\DNS-Test\DNS-Test\bin\Debug\netcoreapp2.0\DNS-Test.runtimeconfig.json
+D:\Application\DNS-Test\DNS-Test\bin\Debug\netcoreapp2.0\DNS-Test.runtimeconfig.dev.json
+D:\Application\DNS-Test\DNS-Test\bin\Debug\netcoreapp2.0\DNS-Test.dll
+D:\Application\DNS-Test\DNS-Test\bin\Debug\netcoreapp2.0\DNS-Test.pdb
+D:\Application\DNS-Test\DNS-Test\obj\Debug\netcoreapp2.0\DNS-Test.csproj.CoreCompileInputs.cache
+D:\Application\DNS-Test\DNS-Test\obj\Debug\netcoreapp2.0\DNS-Test.AssemblyInfoInputs.cache
+D:\Application\DNS-Test\DNS-Test\obj\Debug\netcoreapp2.0\DNS-Test.AssemblyInfo.cs
+D:\Application\DNS-Test\DNS-Test\obj\Debug\netcoreapp2.0\DNS-Test.dll
+D:\Application\DNS-Test\DNS-Test\obj\Debug\netcoreapp2.0\DNS-Test.pdb
+D:\Application\DNS-Test\DNS-Test\obj\Debug\netcoreapp2.0\DNS-Test.csprojAssemblyReference.cache
