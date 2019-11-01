@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using DNS_Test.Entity;
 using DNS_Test.Entity.Model;
 using DNS_Test.Models;
@@ -18,12 +19,12 @@ namespace DNS_Test.Controllers
 		}
 
 		[HttpGet]
-		public List<NodeView> GetTree()
+		public List<NodeDto> GetTree()
 		{
-			var tree = Repository.GetTree();
-			var treeView = MappingToView(tree);
+			// Преобразуем дерево в тип объекта, с которым будет работать плагин jsTree
+			var tree = Repository.GetTree().Select(t => new NodeDto(t)).ToList();
 
-			return treeView;
+			return tree;
 		}
 
 		[HttpPost]
@@ -47,19 +48,6 @@ namespace DNS_Test.Controllers
 			{
 				return false;
 			}
-		}
-
-		private List<NodeView> MappingToView(IEnumerable<Node> tree)
-		{
-			var treeView = new List<NodeView>();
-
-			foreach (var node in tree)
-			{
-				var nodeView = new NodeView(node);
-				treeView.Add(nodeView);
-			}
-
-			return treeView;
 		}
 	}
 }

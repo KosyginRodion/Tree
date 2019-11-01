@@ -4,7 +4,7 @@ using System;
 namespace DNS_Test.Models
 {
 	[Serializable]
-	public class NodeView
+	public class NodeDto
 	{
 		public int Id { get; set; }
 
@@ -14,15 +14,16 @@ namespace DNS_Test.Models
 
 		public string Type { get; set; }
 
-		public NodeView() { }
+		public NodeDto() { }
 
-		public NodeView(Node tree)
+		public NodeDto(Node tree)
 		{
 			Id = tree.Id;
 			Text = tree.Name;
 			Type = tree.Type;
 
-			if(tree.ParentId == 0)
+			// Родительский элемент со значением "#" соотвествует корню дерева
+			if (tree.ParentId == 0)
 			{
 				Parent = "#";
 			}

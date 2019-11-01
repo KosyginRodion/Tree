@@ -31,7 +31,6 @@ namespace DNS_Test.Entity
 
 			node.ParentId = newParentId;
 
-			Context.Update(node);
 			Context.SaveChanges();
 		}
 	}
